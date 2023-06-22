@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62, 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+$main-bg: #FFF3C7; // Lemon Chiffon
+$accent-color: #FFE57B; //Jasmin
+$font-color: #912f00; //Brown
+$hover-color: #FFDC50; //Mustard
+$hover-hover-color: #E0AB3A; //Hunyadi Yellow
+$hover-font-color: #912F00; //Brown
+$shadow-effekt: #E0AB3A;
+$logo-font: "Cinzel Decorative", cursive;
+$main-font: "Roboto", sans-serif;
+
+body {
+  background: $main-bg;
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 6.5rem;
+  background-color: $accent-color;
+  box-shadow: 0rem 0.3rem #FFDC50;
+}
+
+// Logo
+.logo {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5rem 0.5rem;
+  a {
+    text-decoration: none;
+    color: $font-color;
+  }
+  h1 {
+    color: $font-color;
+    font-size: 2.5rem;
+    font-family: $logo-font;
+  }
+  h4 {
+    font-size: 0.9rem;
+    color: $font-color;
+  }
+}
+
+// Navbar
+nav ul {
+  display: flex;
+  justify-content: center;
+  li {
+    list-style: none;
+    position: relative;
+
+    a {
+      color: $font-color;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.3rem;
+      padding: 2.5rem;
+      display: block;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+    a:hover {
+      background-color: $hover-color;
+      color: $hover-font-color;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      background-color: $hover-color;
+      padding: 0.4rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+  }
+}
+
+nav ul li:hover ul {
+   display: block;
+   color: $hover-font-color;
+ } 
+
+nav ul li ul li a {
+  color: $hover-font-color;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li ul li a:hover {
+  background-color: $hover-hover-color;
+  color: $hover-font-color;
+}
+
+.icon {
+  width: 5rem;
+}
+
+@media (min-width:350px) {
+  
+}

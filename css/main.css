@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62, 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #FFF3C7;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 6.5rem;
+  background-color: #FFE57B;
+  box-shadow: 0rem 0.3rem #FFDC50;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5rem 0.5rem;
+}
+.logo a {
+  text-decoration: none;
+  color: #912f00;
+}
+.logo h1 {
+  color: #912f00;
+  font-size: 2.5rem;
+  font-family: "Cinzel Decorative", cursive;
+}
+.logo h4 {
+  font-size: 0.9rem;
+  color: #912f00;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+nav ul li a {
+  color: #912f00;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  padding: 2.5rem;
+  display: block;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+nav ul li a:hover {
+  background-color: #FFDC50;
+  color: #912F00;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #FFDC50;
+  padding: 0.4rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+nav ul li:hover ul {
+  display: block;
+  color: #912F00;
+}
+
+nav ul li ul li a {
+  color: #912F00;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li ul li a:hover {
+  background-color: #E0AB3A;
+  color: #912F00;
+}
+
+.profil {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.4rem;
+}/*# sourceMappingURL=main.css.map */
