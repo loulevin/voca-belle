@@ -105,6 +105,16 @@ nav ul li ul li a:hover {
   width: 5rem;
 }
 
-@media (min-width:350px) {
-  
+@media screen and (max-width:320px) {
+  .logo {
+    h1 {
+      color: red;
+      font-size: 1.3rem;
+      font-family: $logo-font;
+    }
+    h4 {
+      font-size: 0.9rem;
+      color: $font-color;
+    }
+  }
 }
