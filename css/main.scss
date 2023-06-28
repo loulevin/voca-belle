@@ -9,13 +9,13 @@
   font-family: "Roboto", sans-serif;
 }
 
-$main-bg: #FFF3C7; // Lemon Chiffon
-$accent-color: #FFE57B; //Jasmin
+$main-bg: #fff3c7; // Lemon Chiffon
+$accent-color: #ffe57b; //Jasmin
 $font-color: #912f00; //Brown
-$hover-color: #FFDC50; //Mustard
-$hover-hover-color: #E0AB3A; //Hunyadi Yellow
-$hover-font-color: #912F00; //Brown
-$shadow-effekt: #E0AB3A;
+$hover-color: #ffdc50; //Mustard
+$hover-hover-color: #e0ab3a; //Hunyadi Yellow
+$hover-font-color: #912f00; //Brown
+$shadow-effekt: #e0ab3a;
 $logo-font: "Cinzel Decorative", cursive;
 $main-font: "Roboto", sans-serif;
 
@@ -30,7 +30,7 @@ body {
   width: 100vw;
   height: 6.5rem;
   background-color: $accent-color;
-  box-shadow: 0rem 0.3rem #FFDC50;
+  box-shadow: 0rem 0.3rem #ffdc50;
 }
 
 // Logo
@@ -86,9 +86,9 @@ nav ul {
 }
 
 nav ul li:hover ul {
-   display: block;
-   color: $hover-font-color;
- } 
+  display: block;
+  color: $hover-font-color;
+}
 
 nav ul li ul li a {
   color: $hover-font-color;
@@ -101,11 +101,38 @@ nav ul li ul li a:hover {
   color: $hover-font-color;
 }
 
-.icon {
-  width: 5rem;
+// .icon {
+//   width: 5rem;
+// }
+
+p {
+  padding: 5vw 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width:320px) {
+.flashcard {
+  padding: 0 20vh;
+  fieldset {
+    padding: 1rem;
+    border: 0.2rem solid $hover-font-color;
+    border-radius: 1rem;
+    background-color: $accent-color;
+  }
+  legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.9rem;
+  }
+  label {
+    padding: 1.5rem;
+    display: block;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .logo {
     h1 {
       color: red;

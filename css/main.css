@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #FFF3C7;
+  background: #fff3c7;
 }
 
 .header {
@@ -18,8 +18,8 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 6.5rem;
-  background-color: #FFE57B;
-  box-shadow: 0rem 0.3rem #FFDC50;
+  background-color: #ffe57b;
+  box-shadow: 0rem 0.3rem #ffdc50;
 }
 
 .logo {
@@ -60,35 +60,68 @@ nav ul li a {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 nav ul li a:hover {
-  background-color: #FFDC50;
-  color: #912F00;
+  background-color: #ffdc50;
+  color: #912f00;
 }
 nav ul li ul {
   display: none;
   position: absolute;
-  background-color: #FFDC50;
+  background-color: #ffdc50;
   padding: 0.4rem;
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
 nav ul li:hover ul {
   display: block;
-  color: #912F00;
+  color: #912f00;
 }
 
 nav ul li ul li a {
-  color: #912F00;
+  color: #912f00;
   padding: 1.3rem;
   border-radius: 0.5rem;
 }
 
 nav ul li ul li a:hover {
-  background-color: #E0AB3A;
-  color: #912F00;
+  background-color: #e0ab3a;
+  color: #912f00;
 }
 
-.profil {
-  width: 5rem;
-  height: 5rem;
-  padding: 0.4rem;
+p {
+  padding: 5vw 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flashcard {
+  padding: 0 20vh;
+}
+.flashcard fieldset {
+  padding: 1rem;
+  border: 0.2rem solid #912f00;
+  border-radius: 1rem;
+  background-color: #ffe57b;
+}
+.flashcard legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.9rem;
+}
+.flashcard label {
+  padding: 1.5rem;
+  display: block;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 320px) {
+  .logo h1 {
+    color: red;
+    font-size: 1.3rem;
+    font-family: "Cinzel Decorative", cursive;
+  }
+  .logo h4 {
+    font-size: 0.9rem;
+    color: #912f00;
+  }
 }/*# sourceMappingURL=main.css.map */
